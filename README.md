@@ -5,11 +5,18 @@ In this function, we will sort an array of numbers in both ascending and descend
 
 ## Structure
 `soring_algorithms` - Folder containing the sorting algorithms
+
 `utility` - Folder containing the utility functions like generating random numbers
+
 `index.ts` - Main file to run the function
 
+`types` - Folder containing the types like `SortOrder` etc.
+
+Each crucial function has its own test file next to it.
+To run the tests, run `npm test` in the terminal.
+
 ## Development
-Just run the following file to test the function: `index.ts`
+Just run the `index.ts` to test the function: 
 
 ## Installation
 1. Clone the repository

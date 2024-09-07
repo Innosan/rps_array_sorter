@@ -1,3 +1,5 @@
+import { SortOrder } from "../types/SortOrder";
+
 /**
  * Bubble sort algorithm
  *
@@ -9,24 +11,29 @@
  * Space complexity: O(1) - Constant space (no extra space is needed because the array is sorted in place)
  *
  * @param arr - The array to be sorted
+ * @param order - The order to sort the array in (ascending or descending)
  */
-export const bubbleSort = (arr: number[]): number[] => {
+export const bubbleSort = (arr: number[], order: SortOrder): number[] => {
 	let copyArr = [...arr]; // Copy the array to avoid mutating the original array
 	let swapped: boolean; // Flag to check if any swap has been made
 
-	do {
-		swapped = false;
+	// Loop through the array and compare elements based on the order
+	for (let i = 0; i < copyArr.length; i++) {
+		swapped = false; // Reset the flag for each iteration
 
-		// Loop through the array
-		for (let i = 0; i < arr.length; i++) {
-			if (copyArr[i] > copyArr[i + 1]) {
-				[copyArr[i], copyArr[i + 1]] = [copyArr[i + 1], copyArr[i]]; // Swap the elements
-
+		for (let j = 0; j < copyArr.length - i - 1; j++) {
+			// Compare adjacent elements and swap them if they are in the wrong order
+			if (order === SortOrder.ASC ? copyArr[j] > copyArr[j + 1] : copyArr[j] < copyArr[j + 1]) {
+				[copyArr[j], copyArr[j + 1]] = [copyArr[j + 1], copyArr[j]]; // Swap the elements
 				swapped = true; // Set the flag to true
 			}
 		}
-	} while (swapped); // Continue the loop until no swap is made (i.e., the array is sorted)
 
-	// Return the sorted array
-	return copyArr;
+		// If no swap has been made in the current iteration, the array is already sorted
+		if (!swapped) {
+			break;
+		}
+	}
+
+	return copyArr; // Return the sorted array
 };
