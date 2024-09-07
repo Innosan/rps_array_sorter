@@ -15,9 +15,11 @@ In this function, we will sort an array of numbers in both ascending and descend
 Each crucial function has its own test file next to it.
 To run the tests, run `npm test` in the terminal.
 
+## Installation
+1. Clone the repository
+2. Install dependencies with `npm i`
+3. Run the `index.ts` file
+
 ## Development
 Just run the `index.ts` to test the function: 
 
-## Installation
-1. Clone the repository
-2. Run the `index.ts` file
