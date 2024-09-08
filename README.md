@@ -1,23 +1,28 @@
-# RPS Array sorter function
-## This function sorts an array of numbers in both orders.
+# Функция сортировки массива RPS
+## Эта функция сортирует массив чисел в обоих порядках.
 
-In this function, we will sort an array of numbers in both ascending and descending orders. We will use the bubble sort algorithm to sort the array. The bubble sort algorithm compares adjacent elements and swaps them if they are in the wrong order. This process is repeated until the array is sorted.
+В этой функции мы будем сортировать массив чисел как в порядке возрастания, так и в порядке убывания. Для сортировки массива мы будем использовать алгоритм пузырьковой сортировки. Алгоритм пузырьковой сортировки сравнивает соседние элементы и меняет их местами, если они находятся в неправильном порядке. Этот процесс повторяется до тех пор, пока массив не будет отсортирован.
 
-## Structure
-`soring_algorithms` - Folder containing the sorting algorithms
+## [Анализ сортировок](src/sorting_algorithms/SORTS.md)
 
-`utility` - Folder containing the utility functions like generating random numbers
+## Структура
+`soring_algorithms` - Папка, содержащая алгоритмы сортировки
 
-`index.ts` - Main file to run the function
+`types` - Папка, содержащая типы, такие как `SortOrder` и т.д.
 
-`types` - Folder containing the types like `SortOrder` etc.
+`utility` - Папка, содержащая утилитарные функции, такие как генерация случайных чисел
 
-Each crucial function has its own test file next to it.
-To run the tests, run `npm test` in the terminal.
+`index.ts` - Основной файл для запуска функции
 
-## Development
-Just run the `index.ts` to test the function: 
+`input.ts` - Файл, содержащий функции для работы с входными данными
 
-## Installation
-1. Clone the repository
-2. Run the `index.ts` file
+
+Каждая важная функция имеет свой собственный тестовый файл рядом с ней.
+Для запуска тестов выполните команду `npm test` в терминале.
+
+## Разработка
+Просто запустите `index.ts` для тестирования функции:
+
+## Установка
+1. Клонируйте репозиторий
+2. Запустите файл `index.ts`
