@@ -8,8 +8,5 @@ yarn-error.log*
 /.pnp
 .pnp.js
 
-.vscode/*
-.idea
-.idea/vcs.xml
-.idea/discord.xml
-.idea/.gitignore
+/.idea/
+/.vscode/

@@ -1,4 +1,4 @@
-import { SortOrder } from "../types/SortOrder";
+import { SortOrder } from "../../types/SortOrder";
 
 /**
  * Bubble sort algorithm
@@ -6,9 +6,6 @@ import { SortOrder } from "../types/SortOrder";
  * Description: Bubble sort is a simple sorting algorithm that repeatedly steps through the list,
  * compares adjacent elements, and swaps them if they are in the wrong order.
  * The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
- *
- * Time complexity: O(n^2) - O(n) * O(n) (worst and average case), because of the nested loops
- * Space complexity: O(1) - Constant space (no extra space is needed because the array is sorted in place)
  *
  * @param arr - The array to be sorted
  * @param order - The order to sort the array in (ascending or descending)
